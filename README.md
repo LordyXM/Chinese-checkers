@@ -1,35 +1,47 @@
-# Java Mini Game Demo (Engine + Graphics + Demos)
+# Chinese Checkers (ООП проект)
 
-This archive contains separate Java projects:
+Учебный проект по объектно-ориентированному программированию.
+Реализация игры «Китайские шашки» на Java с разделением логики, интерфейса
+и представления.
 
-- `engine/` — game logic (engine)
-- `graphics/` — Swing rendering helpers
-- `demo-console/` — mini console demo (ASCII)
-- `demo-gui/` — mini GUI demo (Swing)
+## Структура проекта
 
-Also:
-- `tests/` — lightweight tests (no external libs; uses `assert`)
-- `docs/` — sample branch/log exports
-- `scripts/` — compile/run scripts (Linux/macOS + Windows)
+- engine/  
+  Основная логика игры.  
+  Содержит классы игрового поля, фишек, правил ходов и управления состоянием игры.
 
-## Build / Run
+- graphics/  
+  Отрисовка игрового поля и элементов.
 
-Linux/macOS:
-```bash
-bash scripts/compile.sh
-bash scripts/run-tests.sh
-bash scripts/run-console.sh
-bash scripts/run-gui.sh
-```
+- demo-console/  
+  Консольная версия игры для тестирования логики.
 
-Windows PowerShell:
-```powershell
-.\scripts\compile.bat
-.\scripts\run-tests.bat
-.\scripts\run-console.bat
-.\scripts\run-gui.bat
-```
+- demo-gui/  
+  Графическая версия игры (GUI).
 
-Controls:
-- Console demo: `W A S D` + Enter, `Q` to quit
-- GUI demo: arrow keys, `Esc` to quit
+- tests/  
+  Модульные тесты для проверки логики игры.
+
+- scripts/  
+  Вспомогательные скрипты для сборки и запуска.
+
+- docs/  
+  Документация по проекту.
+
+## Используемые принципы ООП
+
+- Инкапсуляция — логика игры скрыта внутри классов engine
+- Наследование — расширение базовых игровых сущностей
+- Полиморфизм — единый интерфейс для разных типов отображения
+- Разделение ответственности (SRP)
+
+## Запуск проекта
+
+1. Склонировать репозиторий
+2. Открыть проект в IDE (IntelliJ IDEA / Eclipse)
+3. Запустить demo-console или demo-gui
+
+## Назначение проекта
+
+Проект разработан в учебных целях для демонстрации
+принципов объектно-ориентированного программирования.
