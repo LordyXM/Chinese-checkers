@@ -1,0 +1,19 @@
+Sample branch layout (one branch per module, merged into main at the end):
+
+- main
+- feature/engine-core
+- feature/engine-ecs
+- feature/engine-grid
+- feature/graphics-swing
+- feature/demo-console
+- feature/demo-gui
+- feature/tests
+
+Merge order:
+feature/engine-core -> main
+feature/engine-ecs  -> main
+feature/engine-grid -> main
+feature/graphics-swing -> main
+feature/demo-console -> main
+feature/demo-gui -> main
+feature/tests -> main

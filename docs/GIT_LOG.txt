@@ -1,0 +1,27 @@
+Sample `git log --oneline --graph --decorate --all` (illustrative):
+
+*   9f2c1c7 (HEAD -> main) merge: feature/tests
+|\
+| * 6d0a110 (feature/tests) tests: movement, grid collision, scene resources
+|/
+*   4c9b2a4 merge: feature/demo-gui
+|\
+| * 3a88c0e (feature/demo-gui) demo-gui: Swing panel + key controls
+|/
+*   20f3a9e merge: feature/demo-console
+|\
+| * 7f1aa1c (feature/demo-console) demo-console: ASCII renderer + input loop
+|/
+*   2b9dd51 merge: feature/graphics-swing
+|\
+| * 94f5d0b (feature/graphics-swing) graphics: SwingRenderUtils + grid painter
+|/
+*   c4c7d4e merge: feature/engine-grid
+|\
+| * a7d2c11 (feature/engine-grid) engine-grid: GridWorld.withBorderWalls + tiles
+|/
+*   11b6b9a merge: feature/engine-ecs
+|\
+| * 8b0e9fd (feature/engine-ecs) engine-ecs: Scene, Entity, components + MovementSystem
+|/
+*   0a2a4c0 (feature/engine-core) engine-core: util, math, preconditions
